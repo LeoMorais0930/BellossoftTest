@@ -1,0 +1,170 @@
+{
+	"info": {
+		"_postman_id": "9b3c8c62-0d6e-40f0-9e93-2fc83f966de0",
+		"name": "Bellosoft API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38937181"
+	},
+	"item": [
+		{
+			"name": "Cadastro de Clientes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"string\",\r\n  \"contatos\": [\r\n    { \"tipo\": \"string\", \"texto\": \"string\" },\r\n    { \"tipo\": \"telefone\", \"texto\": \"11999681832\" }\r\n  ],\r\n  \"endereco\": {\r\n    \"cep\": \"18133333\",\r\n    \"numero\": \"99\",\r\n    \"complemento\": \"string\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7072/api/Cliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consultar Clientes",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7072/api/Cliente/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Cliente",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Excluir Clientes",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7072/api/Cliente/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Cliente",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Clientes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7072/api/Cliente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pesquisar Cliente por Nome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7072/api/Cliente/pesquisa?nome={nome}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Cliente",
+						"pesquisa"
+					],
+					"query": [
+						{
+							"key": "nome",
+							"value": "{nome}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Dados do Cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"string\",\r\n  \"contatos\": [\r\n    { \"tipo\": \"email\", \"texto\": \"string\" },\r\n    { \"tipo\": \"telefone\", \"texto\": \"11999681832\" }\r\n  ],\r\n  \"endereco\": {\r\n    \"cep\": \"18133444\",\r\n    \"numero\": \"41\",\r\n    \"complemento\": \"string\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7072/api/Cliente/{id}",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7072",
+					"path": [
+						"api",
+						"Cliente",
+						"{id}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
