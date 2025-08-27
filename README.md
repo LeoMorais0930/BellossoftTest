@@ -1,4 +1,4 @@
-# tBellosoftTest API – Junior Backend Developer Coding Assessment
+# BellosoftTest API – Junior Backend Developer Coding Assessment
 
 Projeto desenvolvido como parte do teste para Junior Backend Developer. Trata-se de uma API RESTful em .NET 8 que integra com a API externa ViaCEP para cadastro e consulta de clientes, demonstrando conhecimentos em desenvolvimento de APIs, integração de terceiros, persistência de dados e boas práticas de backend.
 
