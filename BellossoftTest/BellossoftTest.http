@@ -1,0 +1,6 @@
+@BellosoftTest_HostAddress = http://localhost:5090
+
+GET {{BellosoftTest_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
