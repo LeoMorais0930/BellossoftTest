@@ -14,7 +14,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
 builder.Services.AddHttpClient<ViaCepService>();
 
 builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("PostgreSqlConnection")));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 
